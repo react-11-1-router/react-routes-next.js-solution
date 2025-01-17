@@ -1,0 +1,16 @@
+name: Tests Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare to tests
+        run: |
+          npm ci
+      - name: Tests
+        run: |
+          npm run e2e:headless

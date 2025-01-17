@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html {
+    @apply font-serif
+  }
+
+  body {
+    @apply m-4
+  }
+
+  h1 {
+    @apply mt-2 text-4xl font-bold;
+  }
+
+  h2 {
+    @apply mt-2 text-2xl font-bold;
+  }
+}
